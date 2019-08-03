@@ -40,7 +40,7 @@ namespace COMP123_S2019_Assgn05
 
             product = new Product();
 
-            Application.Run(selectForm);
+            Application.Run(splashForm);
         }
     }
 }

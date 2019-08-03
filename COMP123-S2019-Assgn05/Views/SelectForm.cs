@@ -34,5 +34,16 @@ namespace COMP123_S2019_Assgn05.Views
         {
             Application.Exit();
         }
+
+        private void SelectionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            Program.productInfoForm.Show();
+            this.Hide();
+        }
     }
 }
