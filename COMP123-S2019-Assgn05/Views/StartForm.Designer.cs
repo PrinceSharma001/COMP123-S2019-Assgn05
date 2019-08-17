@@ -34,6 +34,7 @@
             this.StartOrderButton = new System.Windows.Forms.Button();
             this.SavedOrderButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.SaveOrderFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,6 +80,7 @@
             this.SavedOrderButton.TabIndex = 5;
             this.SavedOrderButton.Text = "Saved Order";
             this.SavedOrderButton.UseVisualStyleBackColor = false;
+            this.SavedOrderButton.Click += new System.EventHandler(this.SavedOrderButton_Click);
             // 
             // ExitButton
             // 
@@ -97,6 +99,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(304, 361);
+            this.ControlBox = false;
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.SavedOrderButton);
             this.Controls.Add(this.StartOrderButton);
@@ -120,5 +123,6 @@
         private System.Windows.Forms.Button StartOrderButton;
         private System.Windows.Forms.Button SavedOrderButton;
         private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.SaveFileDialog SaveOrderFileDialog;
     }
 }

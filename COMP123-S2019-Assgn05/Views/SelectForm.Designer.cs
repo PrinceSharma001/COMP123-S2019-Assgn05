@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.ProductDataataGridView = new System.Windows.Forms.DataGridView();
+            this.ProductDataGridView = new System.Windows.Forms.DataGridView();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,21 +65,21 @@
             this.SelectionLabel = new System.Windows.Forms.Label();
             this.SelectionTextBox = new System.Windows.Forms.TextBox();
             this.NextButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.ProductDataataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // ProductDataataGridView
+            // ProductDataGridView
             // 
-            this.ProductDataataGridView.AllowUserToAddRows = false;
-            this.ProductDataataGridView.AllowUserToDeleteRows = false;
-            this.ProductDataataGridView.AllowUserToResizeColumns = false;
-            this.ProductDataataGridView.AllowUserToResizeRows = false;
-            this.ProductDataataGridView.AutoGenerateColumns = false;
-            this.ProductDataataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.ProductDataataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.ProductDataataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProductDataataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ProductDataGridView.AllowUserToAddRows = false;
+            this.ProductDataGridView.AllowUserToDeleteRows = false;
+            this.ProductDataGridView.AllowUserToResizeColumns = false;
+            this.ProductDataGridView.AllowUserToResizeRows = false;
+            this.ProductDataGridView.AutoGenerateColumns = false;
+            this.ProductDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.ProductDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.ProductDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ProductDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productIDDataGridViewTextBoxColumn,
             this.costDataGridViewTextBoxColumn,
             this.manufacturerDataGridViewTextBoxColumn,
@@ -109,13 +109,14 @@
             this.mousttypeDataGridViewTextBoxColumn,
             this.powerDataGridViewTextBoxColumn,
             this.webcamDataGridViewTextBoxColumn});
-            this.ProductDataataGridView.DataSource = this.productBindingSource;
-            this.ProductDataataGridView.Location = new System.Drawing.Point(12, 73);
-            this.ProductDataataGridView.Name = "ProductDataataGridView";
-            this.ProductDataataGridView.ReadOnly = true;
-            this.ProductDataataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ProductDataataGridView.Size = new System.Drawing.Size(760, 356);
-            this.ProductDataataGridView.TabIndex = 0;
+            this.ProductDataGridView.DataSource = this.productBindingSource;
+            this.ProductDataGridView.Location = new System.Drawing.Point(12, 73);
+            this.ProductDataGridView.Name = "ProductDataGridView";
+            this.ProductDataGridView.ReadOnly = true;
+            this.ProductDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ProductDataGridView.Size = new System.Drawing.Size(760, 356);
+            this.ProductDataGridView.TabIndex = 0;
+            this.ProductDataGridView.SelectionChanged += new System.EventHandler(this.ProductDataataGridView_SelectionChanged);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -389,9 +390,9 @@
             this.SelectionTextBox.BackColor = System.Drawing.Color.White;
             this.SelectionTextBox.Location = new System.Drawing.Point(184, 497);
             this.SelectionTextBox.Name = "SelectionTextBox";
-            this.SelectionTextBox.ReadOnly = true;
             this.SelectionTextBox.Size = new System.Drawing.Size(339, 26);
             this.SelectionTextBox.TabIndex = 4;
+            this.SelectionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // NextButton
             // 
@@ -414,7 +415,7 @@
             this.Controls.Add(this.SelectionLabel);
             this.Controls.Add(this.ListLabel);
             this.Controls.Add(this.CancelButton);
-            this.Controls.Add(this.ProductDataataGridView);
+            this.Controls.Add(this.ProductDataGridView);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -422,7 +423,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SelectForm";
             this.Load += new System.EventHandler(this.SelectForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ProductDataataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -431,7 +432,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView ProductDataataGridView;
+        private System.Windows.Forms.DataGridView ProductDataGridView;
         private System.Windows.Forms.BindingSource productBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn costDataGridViewTextBoxColumn;

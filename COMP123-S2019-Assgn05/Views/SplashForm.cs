@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Created By: Prince Sharma
+ * Student ID: 301043771
+ * Created on: 2 August 2019
+ * Description: This is Splash Form
+ */
+
 namespace COMP123_S2019_Assgn05.Views
 {
     public partial class SplashForm : Form
